@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    max-width: 80vw;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h1-container{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+.p-container{
+    text-align: center;
+    max-width: 490px;
+    line-height: 1rem;
+    margin-bottom: 2.5rem;
+    color: rgb(116, 93, 93);
+}
+.main-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+    justify-content: center;
+}
+.card-Contianer{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(218, 211, 211);
+    border-radius: 8px;
+}
+.card-Contianer:hover{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.image-container{
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.8rem;
+}
+
+.main-img{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+}
+
+.image-disc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.h2-container{
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.para-container{
+    max-width: 260px;
+    color: rgb(83, 78, 78);
+}
+
+.foter-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.avat-container{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+.avatar{
+    height: 2.5rem;
+    width: 2.5rem;
+    position: relative;
+    overflow: hidden;
+
+}
+.avtart-img{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+   border: 1px solid rgb(219, 215, 215);
+   border-radius: 50%;
+    background-color: rgb(243, 235, 235);
+}
+.avatar-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.avtat-disc{
+    border: 1px solid rgb(230, 224, 224);
+    color: gray;
+    padding: 0.2rem;
+    margin-right: 1rem;
+}
+.name:hover{
+    color: rgb(115, 115, 173);
+}
